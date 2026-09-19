@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-wiggle: wiggle 1.5s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+
+.content-header {
+    @apply text-5xl font-bold mt-10;
+}
+
+.content {
+    @apply h-screen pt-20;
+}
