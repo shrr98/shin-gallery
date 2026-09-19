@@ -1,16 +1,19 @@
 {
-  "name": "shinrr",
-  "private": true,
+  "name": "shin-gallery",
+  "homepage": "https://shrr98.github.io/shin-gallery/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.4",
